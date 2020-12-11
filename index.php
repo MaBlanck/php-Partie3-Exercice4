@@ -13,12 +13,11 @@ $number = 1;
 <body>
     <h1>Exercice 4 Partie 3</h1>
     <ul><?php 
-        while($number < 10)
-        {
-            $result = $number += ($number / 2);
-            echo '<li>' . $result . '</li>';
-        }
-    ?></ul>
+        while($number < 10): ?>
+        <li><?= $number ?></li>
+        <?php $number += ($number / 2);
+        endwhile; ?>
+    </ul>
 
 </body>
 </html>
